@@ -4,8 +4,7 @@ class Vector:
     def __init__(self, x, y):
         self._x = int(x)
         self._y = int(y)
-        temp = (self._x**2 + self._y**2)**0.5
-        self._vlen = round(temp, 5)
+        self._vlen = round((self._x**2 + self._y**2)**0.5, 5)
 
     def __str__(self):
         return f'V({self._x}, {self._y})'
